@@ -16,11 +16,12 @@ Suppose there is a folder you created named practice, so in this step assumed yo
 Create index.js
 
 Create Dockerfile
---->FROM node:alpine
+--->
+    FROM node:alpine
     
     COPY . /practice
     
-    MD ["node", "/practice/index.js"]
+    CMD ["node", "/practice/index.js"]
 
 STEP5: BUILD THE DOCKER IMAGE
 docker build -t practice .
