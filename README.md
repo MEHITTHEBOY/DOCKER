@@ -17,8 +17,10 @@ Create index.js
 
 Create Dockerfile
 --->FROM node:alpine
+    
     COPY . /practice
-    CMD ["node", "/practice/index.js"]
+    
+    MD ["node", "/practice/index.js"]
 
 STEP5: BUILD THE DOCKER IMAGE
 docker build -t practice .
@@ -28,4 +30,5 @@ docker run practice
 
 STEP7: CHECK DOCKER IMAGES OR DOCKER CONTAINERS
 docker images 
+
 docker ps -a
