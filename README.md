@@ -8,6 +8,7 @@ docker --version
 
 STEP3: INCASE OF ANY ISSUE , CREATE A DOCKER GROUP AS SHOWN BELOW
 sudo usermod -aG docker $USER
+
 newgrp docker
 
 STEP4: SETUP YOUR PROJECT
